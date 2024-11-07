@@ -1,0 +1,51 @@
+src/
+└── app/
+    ├── core/                   # Services et logique partagée
+    │   ├── auth/               # Authentification OAuth2 avec Discord
+    │   │   ├── auth.service.ts
+    │   │   └── auth.guard.ts
+    │   ├── services/           # Services pour gérer les API du bot
+    │   │   ├── bot.service.ts
+    │   │   ├── user.service.ts
+    │   │   └── guild.service.ts
+    │   └── models/             # Modèles pour les données (interfaces/types)
+    │       ├── user.model.ts
+    │       ├── guild.model.ts
+    │       └── command.model.ts
+    ├── shared/                 # Composants et utilitaires partagés
+    │   ├── components/         # Composants réutilisables
+    │   │   ├── navbar/         # Barre de navigation
+    │   │   │   ├── navbar.component.ts
+    │   │   │   └── navbar.component.html
+    │   │   └── sidebar/        # Barre latérale de navigation
+    │   │       ├── sidebar.component.ts
+    │   │       └── sidebar.component.html
+    │   ├── directives/         # Directives personnalisées
+    │   └── pipes/              # Pipes personnalisés
+    ├── modules/                # Modules pour chaque fonctionnalité
+    │   ├── dashboard/          # Module du tableau de bord
+    │   │   ├── dashboard.component.ts
+    │   │   ├── dashboard.component.html
+    │   │   └── dashboard-routing.module.ts
+    │   ├── moderation/         # Module de modération
+    │   │   ├── moderation.component.ts
+    │   │   ├── moderation.component.html
+    │   │   └── moderation-routing.module.ts
+    │   ├── commands/           # Module des commandes personnalisées
+    │   │   ├── commands.component.ts
+    │   │   ├── commands.component.html
+    │   │   └── commands-routing.module.ts
+    │   ├── levels/             # Module des niveaux et de l’expérience
+    │   │   ├── levels.component.ts
+    │   │   ├── levels.component.html
+    │   │   └── levels-routing.module.ts
+    │   ├── welcome/            # Module des messages de bienvenue
+    │   │   ├── welcome.component.ts
+    │   │   ├── welcome.component.html
+    │   │   └── welcome-routing.module.ts
+    │   └── settings/           # Module des paramètres du bot
+    │       ├── settings.component.ts
+    │       ├── settings.component.html
+    │       └── settings-routing.module.ts
+    ├── app-routing.module.ts   # Module de routage principal
+    └── app.component.ts        # Composant racine
